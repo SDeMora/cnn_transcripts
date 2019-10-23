@@ -7,7 +7,11 @@ The transcripts are available for shows starting `1999/10/01`. See [http://editi
 CNN went through a few HTML styles of the news transcripts between `2000/01/01`and 2014. So there are two scapers to parse the different HTML styles:
 
 * [till 2002/9/17](scripts/cnn-1.py)
-* [from 2002/9/17](scripts/cnn-1.py)
+* [from 2002/9/17](scripts/cnn-2.py)
+
+This new script scrapes and exports all data after the last point on Dataverse. It is the same as [cnn-2.py](scripts/cnn-2.py), but with an updated start date.
+
+* [from 2014/06/18](scripts/cnn-3.py)
 
 ### Data
 
@@ -22,10 +26,8 @@ The parsed data are posted at [http://dx.doi.org/10.7910/DVN/ISDPJU](http://dx.d
 
 Total number of transcripts: 190,882
 
+If we add in transcripts after 2014/06/18 (the last Dataverse data point) we get:
 
-### Notes
+* `cnn-7.csv`. Data from  2014/06/18--2019/10/23. No. of transcripts = TBD
 
-* 2000-04-21 New format error
-* 2000-04-22 content within <p> and </p> tag
-* 2001-04-04 No URL prefix, subheader ==> h4, content next table <br> tag
-* Scripts from 2014
+Total number of transcripts: TBD
