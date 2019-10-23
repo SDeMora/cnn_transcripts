@@ -107,7 +107,8 @@ if __name__ == "__main__":
     #startdate = date(2000, 1, 1)
     #startdate = date(2000, 4, 22)
     #startdate = date(2001, 4, 4)
-    startdate = date(2002, 8, 7)
+    #startdate = date(2002, 8, 7)
+    startdate = date(2002, 9, 17)
 
     # Will be throttled to 10 HTTP requests per minute
     i = 0
@@ -138,7 +139,7 @@ if __name__ == "__main__":
         except Exception as e:
             print "ERROR: %s" % e
         startdate += timedelta(days=1)
-        if startdate == date(2002, 9, 17):
+        if startdate == date(2019, 10, 22):
             print "Complete..."
             break
     f.close()
